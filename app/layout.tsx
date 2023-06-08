@@ -16,6 +16,11 @@ const epilogue = localFont({
   display: "swap",
   variable: "--font-epilogue",
 });
+const petrona = localFont({
+  src: "../public/fonts/Petrona/Petrona-VariableFont_wght.ttf",
+  display: "swap",
+  variable: "--font-petrona",
+});
 
 export const metadata = {
   title: "DNH Technologies",
@@ -30,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sentient.variable} ${literata.variable} ${epilogue.variable}`}
+        className={`${sentient.variable} ${literata.variable} ${epilogue.variable} ${petrona.variable}`}
       >
         {children}
       </body>
