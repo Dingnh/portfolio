@@ -1,7 +1,21 @@
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const sentient = localFont({
+  src: "../public/fonts/Sentient/Fonts/Variable/Sentient-Variable.ttf",
+  display: "swap",
+  variable: "--font-sentient",
+});
+const literata = localFont({
+  src: "../public/fonts/Literata/Literata-VariableFont_opsz,wght.ttf",
+  display: "swap",
+  variable: "--font-literata",
+});
+const epilogue = localFont({
+  src: "../public/fonts/Epilogue/Epilogue-VariableFont_wght.ttf",
+  display: "swap",
+  variable: "--font-epilogue",
+});
 
 export const metadata = {
   title: "DNH Technologies",
@@ -15,7 +29,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${sentient.variable} ${literata.variable} ${epilogue.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
