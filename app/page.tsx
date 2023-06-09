@@ -37,9 +37,10 @@ export default function About() {
         <div className="flex flex-col gap-5 leading-8 sm:leading-10 font-sentient font-light text-neutral-800 sm:text-lg">
           <p>
             My name is Ding Nick Hong, and for the most part I work in Web
-            Development. I've graduated from Sunway University in 2022, and have
-            since worked professionally as a Software Engineer, participated in
-            a few Startups and help launched at least 5 successful products.
+            Development. I{"'"}ve graduated from Sunway University in 2022, and
+            have since worked professionally as a Software Engineer,
+            participated in a few Startups and help launched at least 5
+            successful products.
           </p>
           <p>
             I’m not very good at talking about what I do for a living, so I hope
