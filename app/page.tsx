@@ -1,4 +1,6 @@
 import Layout from "@/components/Layout";
+import cn from "classnames";
+//  hover:decoration-neutral-900
 import Link from "next/link";
 import {
   AiOutlineGithub,
@@ -63,10 +65,14 @@ export default function About() {
         <div className="font-sentient font-light sm:text-lg pt-7">
           You can get in touch with me{" "}
           <Link
-            href="/contact-me"
-            className="underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900"
+            // href="/contact-me"
+            href="#"
+            className={cn(
+              "underline underline-offset-8 decoration-neutral-200 text-neutral-400"
+            )}
+            //  hover:decoration-neutral-900
           >
-            here
+            here (WIP)
           </Link>
         </div>
       </div>
