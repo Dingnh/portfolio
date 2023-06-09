@@ -3,7 +3,6 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Tooltip } from "react-tooltip";
 import Container from "./Container";
 const links = [
   { label: "about", url: "/", wip: false },
@@ -34,12 +33,9 @@ const Navbar = () => {
                     ["wip text-neutral-400 cursor-not-allowed"]: link.wip,
                   }
                 )}
-                data-tooltip-id="my-wip"
-                data-tooltip-content={"Hello world!"}
                 key={id}
               >
                 {link.label} {link.wip ? "(WIP)" : ""}
-                <Tooltip id="wip" />
               </Link>
             );
           })}
