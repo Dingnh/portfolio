@@ -23,7 +23,7 @@ const petrona = localFont({
 });
 
 export const metadata = {
-  title: "DNH Technologies",
+  title: "dingnh",
   description: "Portfolio Page by Ding Nick Hong",
 };
 
