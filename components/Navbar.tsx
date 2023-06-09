@@ -3,14 +3,13 @@
 import classNames from "classnames";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Tooltip } from "react-tooltip";
 import Container from "./Container";
-
 const links = [
-  { label: "about", url: "/" },
-  { label: "portfolio", url: "/portfolio" },
-  { label: "contact", url: "/contact-me" },
+  { label: "about", url: "/", wip: false },
+  { label: "portfolio", url: "/portfolio", wip: true },
+  { label: "contact", url: "/contact-me", wip: true },
 ];
-
 const Navbar = () => {
   const pathname = usePathname();
 
@@ -25,17 +24,22 @@ const Navbar = () => {
             const isActive = pathname.startsWith(link.url);
             return (
               <Link
-                href={link.url}
+                href={!link.wip ? link.url : "#"}
                 className={classNames(
-                  "uppercase text-lg sm:text-xl flex items-center hover:text-neutral-900 underline-offset-8",
+                  "uppercase text-lg sm:text-xl flex items-center underline-offset-8",
                   {
-                    ["text-neutral-400 hover:underline"]: !isActive,
-                    ["text-neutral-900 underline"]: isActive,
+                    ["text-neutral-400 hover:text-neutral-900 hover:underline"]:
+                      !link.wip && !isActive,
+                    ["text-neutral-900 underline"]: !link.wip && isActive,
+                    ["wip text-neutral-400 cursor-not-allowed"]: link.wip,
                   }
                 )}
+                data-tooltip-id="my-wip"
+                data-tooltip-content={"Hello world!"}
                 key={id}
               >
-                {link.label}
+                {link.label} {link.wip ? "(WIP)" : ""}
+                <Tooltip id="wip" />
               </Link>
             );
           })}

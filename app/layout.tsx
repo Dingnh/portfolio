@@ -6,22 +6,11 @@ const sentient = localFont({
   display: "swap",
   variable: "--font-sentient",
 });
-const literata = localFont({
-  src: "../public/fonts/Literata/Literata-VariableFont_opsz,wght.ttf",
-  display: "swap",
-  variable: "--font-literata",
-});
 const epilogue = localFont({
   src: "../public/fonts/Epilogue/Epilogue-VariableFont_wght.ttf",
   display: "swap",
   variable: "--font-epilogue",
 });
-const petrona = localFont({
-  src: "../public/fonts/Petrona/Petrona-VariableFont_wght.ttf",
-  display: "swap",
-  variable: "--font-petrona",
-});
-
 export const metadata = {
   title: "dingnh",
   description: "Portfolio Page by Ding Nick Hong",
@@ -34,9 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${sentient.variable} ${literata.variable} ${epilogue.variable} ${petrona.variable}`}
-      >
+      <body className={`${sentient.variable} ${epilogue.variable}`}>
         {children}
       </body>
     </html>

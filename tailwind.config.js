@@ -14,9 +14,7 @@ module.exports = {
       },
       fontFamily: {
         sentient: ["var(--font-sentient)"],
-        literata: ["var(--font-literata)"],
         epilogue: ["var(--font-epilogue)"],
-        petrona: ["var(--font-petrona)"],
       },
     },
   },
