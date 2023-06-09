@@ -7,7 +7,7 @@ const Layout = ({ className, children }: any) => {
   return (
     <div
       className={cn(
-        "flex flex-col gap-16 p-4 sm:p-8 lg:py-16",
+        "flex flex-col gap-16 p-4 sm:p-8 md:py-16 h-full",
         "w-full max-w-full lg:max-w-screen-xl mx-auto"
       )}
     >

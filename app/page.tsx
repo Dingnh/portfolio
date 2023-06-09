@@ -26,15 +26,15 @@ const socials = [
 
 export default function About() {
   return (
-    <Layout className="flex flex-col lg:flex-row gap-4 sm:gap-28 w-full">
+    <Layout className="flex flex-col lg:flex-row gap-4 sm:gap-8 lg:gap-12 xl:gap-20 w-full">
       <img
         src={"/me.jpg"}
         alt="Picture of the author"
-        className="w-auto xl:w-5/12 h-full"
+        className="w-auto lg:w-1/2 object-contain object-top"
       />
-      <div className="flex flex-col w-full gap-3 py-5">
-        <h2 className="font-epilogue text-[30px] font-light">ABOUT</h2>
-        <div className="font-sentient font-extralight leading-8 text-md lg:text-lg flex flex-col gap-5">
+      <div className="flex flex-col w-full gap-3 xl:gap-6 py-5 lg:py-0">
+        <h2 className="font-epilogue text-xl sm:text-2xl">ABOUT</h2>
+        <div className="flex flex-col gap-5 leading-8 sm:leading-10 font-sentient font-light text-neutral-800 sm:text-lg">
           <p>
             My name is Ding Nick Hong, and for the most part I work in Web
             Development. I've graduated from Sunway University in 2022, and have
@@ -47,11 +47,11 @@ export default function About() {
             places here:
           </p>
         </div>
-        <div className="flex flex-col gap-7 pt-5 font-sentient font-extralight">
+        <div className="flex flex-col gap-7 pt-3 font-sentient font-light">
           {socials.map(({ url, label, Icon }, id) => (
             <Link
               href={url}
-              className="group text-md lg:text-lg flex items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900"
+              className="group sm:text-lg flex items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900"
               key={id}
             >
               <Icon className="text-neutral-600 group-hover:text-neutral-900 mr-2" />
@@ -59,7 +59,7 @@ export default function About() {
             </Link>
           ))}
         </div>
-        <div className="font-sentient font-extralight pt-7">
+        <div className="font-sentient font-light sm:text-lg pt-7">
           You can get in touch with me{" "}
           <Link
             href="/contact-me"
