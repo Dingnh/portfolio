@@ -35,7 +35,7 @@ const Navbar = () => {
                 )}
                 key={id}
               >
-                {link.label} {link.wip ? "(WIP)" : ""}
+                {link.label}
               </Link>
             );
           })}
