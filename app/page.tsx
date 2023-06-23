@@ -53,10 +53,11 @@ export default function About() {
           {socials.map(({ url, label, Icon }, id) => (
             <Link
               href={url}
-              className="group sm:text-lg flex items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900"
+              target="_blank"
+              className="group sm:text-lg flex items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900 text-neutral-600 hover:text-neutral-900"
               key={id}
             >
-              <Icon className="text-neutral-600 group-hover:text-neutral-900 mr-2" />
+              <Icon className="mr-2" />
               {label}
             </Link>
           ))}
@@ -65,9 +66,7 @@ export default function About() {
           You can get in touch with me{" "}
           <Link
             href="/contact-me"
-            className={
-              "underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900 text-neutral-600 hover:text-neutral-900"
-            }
+            className="group sm:text-lg items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900 text-neutral-600 hover:text-neutral-900"
           >
             here
           </Link>

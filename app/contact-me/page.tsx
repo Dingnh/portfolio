@@ -40,9 +40,9 @@ export default function ContactMe() {
             For a professional enquiry:{" "}
             <a
               href="mailto:nickhongding@hotmail.com"
-              className="group sm:text-lg flex items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900"
+              className="group sm:text-lg flex items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900 text-neutral-600 hover:text-neutral-900"
             >
-              <AiOutlineMail className="text-neutral-600 group-hover:text-neutral-900 mr-2" />
+              <AiOutlineMail className="mr-2" />
               nickhongding@hotmail.com
             </a>
           </p>
@@ -51,9 +51,9 @@ export default function ContactMe() {
             <a
               target="_blank"
               href="https://wa.link/z5cvep"
-              className="group sm:text-lg flex items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900"
+              className="group sm:text-lg flex items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900 text-neutral-600 hover:text-neutral-900"
             >
-              <AiOutlineWhatsApp className="text-neutral-600 group-hover:text-neutral-900 mr-2" />
+              <AiOutlineWhatsApp className="mr-2" />
               Whatsapp
             </a>
           </p>

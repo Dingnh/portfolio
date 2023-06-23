@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import Link from "next/link";
 //  hover:decoration-neutral-900
 import {
   AiOutlineGithub,
@@ -36,6 +37,21 @@ export default function Portfolio() {
             However, I've also had extensive experiences in other fields of
             development.
           </p>
+        </div>
+        <div>
+          <p className="font-sentient font-light italic py-5">
+            Project Preview Not Available Yet
+          </p>
+        </div>
+        <div className="font-sentient font-light sm:text-lg">
+          Download a copy of my{" "}
+          <Link
+            href="cv.pdf"
+            target="_blank"
+            className="group sm:text-lg items-center underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900 text-neutral-600 hover:text-neutral-900"
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </Layout>
