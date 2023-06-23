@@ -28,7 +28,7 @@ const socials = [
 export default function Portfolio() {
   return (
     <Layout className="flex flex-col lg:flex-row gap-4 sm:gap-8 lg:gap-12 xl:gap-20 w-full">
-      <div className="flex flex-col w-full gap-3 xl:gap-6 py-5 lg:py-0">
+      <div className="flex flex-col w-full gap-3 xl:gap-6 lg:py-0">
         <h2 className="font-epilogue text-xl sm:text-2xl">Portfolio</h2>
         <div className="flex flex-col gap-5 leading-8 sm:leading-10 font-sentient font-light text-neutral-800 sm:text-lg">
           <p>
