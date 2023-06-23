@@ -33,8 +33,8 @@ export default function ContactMe() {
         <h2 className="font-epilogue text-xl sm:text-2xl">Contact Me</h2>
         <div className="flex flex-col gap-5 leading-8 sm:leading-10 font-sentient font-light text-neutral-800 sm:text-lg">
           <p>
-            My working hours is between 10 am - 7 pm but I'm always available
-            for a conversation.
+            My working hours is between 10 am - 7 pm but I{"'"}m always
+            available for a conversation.
           </p>
           <p className="flex flex-wrap gap-2">
             For a professional enquiry:{" "}

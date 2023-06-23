@@ -34,7 +34,7 @@ export default function Portfolio() {
           <p>
             My current profession focuses primarily on Web Development.
             <br />
-            However, I've also had extensive experiences in other fields of
+            However, I{"'"}ve also had extensive experiences in other fields of
             development.
           </p>
         </div>
