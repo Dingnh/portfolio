@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout";
-import cn from "classnames";
 //  hover:decoration-neutral-900
 import Link from "next/link";
 import {
@@ -35,7 +34,7 @@ export default function About() {
         className="w-auto lg:w-1/2 object-contain object-top"
       />
       <div className="flex flex-col w-full gap-3 xl:gap-6 py-5 lg:py-0">
-        <h2 className="font-epilogue text-xl sm:text-2xl">ABOUT</h2>
+        <h2 className="font-epilogue text-xl sm:text-2xl">About</h2>
         <div className="flex flex-col gap-5 leading-8 sm:leading-10 font-sentient font-light text-neutral-800 sm:text-lg">
           <p>
             My name is Ding Nick Hong, and for the most part I work in Web
@@ -65,14 +64,12 @@ export default function About() {
         <div className="font-sentient font-light sm:text-lg pt-7">
           You can get in touch with me{" "}
           <Link
-            // href="/contact-me"
-            href="#"
-            className={cn(
-              "underline underline-offset-8 decoration-neutral-200 text-neutral-400"
-            )}
-            //  hover:decoration-neutral-900
+            href="/contact-me"
+            className={
+              "underline underline-offset-8 decoration-neutral-400 hover:decoration-neutral-900 text-neutral-600 hover:text-neutral-900"
+            }
           >
-            here (WIP)
+            here
           </Link>
         </div>
       </div>

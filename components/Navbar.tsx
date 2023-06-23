@@ -6,8 +6,8 @@ import { usePathname } from "next/navigation";
 import Container from "./Container";
 const links = [
   { label: "about", url: "/", wip: false },
-  { label: "portfolio", url: "/portfolio", wip: true },
-  { label: "contact", url: "/contact-me", wip: true },
+  { label: "portfolio", url: "/portfolio", wip: false },
+  { label: "contact", url: "/contact-me", wip: false },
 ];
 const Navbar = () => {
   const pathname = usePathname();
@@ -20,17 +20,16 @@ const Navbar = () => {
         </h1>
         <div className="font-epilogue flex gap-5">
           {links.map((link, id) => {
-            const isActive = pathname.startsWith(link.url);
+            const isActive = pathname === link.url;
             return (
               <Link
-                href={!link.wip ? link.url : "#"}
+                href={link.url}
                 className={classNames(
                   "uppercase text-lg sm:text-xl flex items-center underline-offset-8",
                   {
                     ["text-neutral-400 hover:text-neutral-900 hover:underline"]:
-                      !link.wip && !isActive,
-                    ["text-neutral-900 underline"]: !link.wip && isActive,
-                    ["wip text-neutral-400 cursor-not-allowed"]: link.wip,
+                      !isActive,
+                    ["text-neutral-900 underline"]: isActive,
                   }
                 )}
                 key={id}
